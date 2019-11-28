@@ -27,7 +27,13 @@ _by Alana Liu_
 5. Enter a password (If you're an HSTAT student your password could be your osis#)
 6. Now click the green button _(Sign up for Github)_
 7. **DO NOT FORGET TO VERIFY YOUR EMAIL**
-8. 
+
+CONGRATULATIONS YOU NOW HAVE A GITHUB ACCOUNT!!!! 
+
+> Now lets set up your ide. Please click the link bellow and follow the steps **SLOWLY & CAREFULLY**  
+
+[github.com/hstatsep/ide50](https://github.com/hstatsep/ide50)
+> In this link you are going to be introduced to a **SSH key.** The steps you're following in the link above is connecting you're github account with your ide. This will make it easier for you to upload your projects onto Github (remote) without having the need to sign in everytime.
 ---
 ## Repository Setup
 
