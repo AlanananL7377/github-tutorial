@@ -22,8 +22,9 @@ _by Alana Liu_
 
 1. Go to [github.com](https://github.com/)
 2. Press Sign Up
-
-
+3. Enter an Username (If you're an HSTAT student this should be your firstname_lastname_last4osis#)
+4. Enter an Email (If you're an HSTAT student please enter your email associated with the school)
+5. Enter a password (If you're an HSTAT student your password could be your osis#)
 ---
 ## Repository Setup
 
