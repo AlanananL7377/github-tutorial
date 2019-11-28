@@ -51,10 +51,13 @@ CONGRATULATIONS YOU NOW HAVE A GITHUB ACCOUNT!!!!
 * Now repeat: 
     * Edit your file, add it and commit it
 
-    
 
 ---
 ## Workflow & Commands
+> You've just used `git init` , `git add` & `git commit` but you really dont know what they exactly do. Bellow is a list of commands you have already used and commands you haven't used that will come in handy. 
+
+`git init` - This command initializes the git in a directory  
+* If git is initialized in a directory its now called a repository.
 
 
 
