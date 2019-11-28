@@ -19,8 +19,10 @@ _by Alana Liu_
 
 ---
 ## Initial Setup
+> Let's now make you a Github account.
 
-
+1. Go to [Github.com](https://github.com/)
+2. 
 
 ---
 ## Repository Setup
