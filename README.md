@@ -11,6 +11,12 @@ _by Alana Liu_
         * keep _“snapshot”_ of code
     * Allows you to undo a previous version
 
+**GitHub**
+* Stores info in cloud
+    * Allows you to manage Git repository
+    * Visually tracks changes
+* Easily collaborated
+
 ---
 ## Initial Setup
 
