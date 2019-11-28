@@ -56,10 +56,28 @@ CONGRATULATIONS YOU NOW HAVE A GITHUB ACCOUNT!!!!
 ## Workflow & Commands
 > You've just used `git init` , `git add` & `git commit` but you really dont know what they exactly do. Bellow is a list of commands you have already used and commands you haven't used that will come in handy. 
 
+REMEMBER **ALL** these commands are typed in the command line:
+
 `git init` - This command initializes the git in a directory  
 * If git is initialized in a directory its now called a repository.
 
+`git add file.ext` - Adds changes for a *specific file* to the stage ready to commit
+
+`git add .` - Adds changes of **ALL** files to the stage
+
+`git status` - Ever wonder if you have added a file to the stage ready to commit. Well git status allows you to see what you have added or no. 
+> If you see `Modified: <file_name>` in red, it means you havent added it to the stage. While if you see the same text in green it means its been added to the stage and its ready to be commited.
+
+`git commit -m "short/specific message"` - Once you've added your edits to the stage they are ready to be commited (saved).  
+* Your message *must be:* 
+    * In presesnt tense
+    * Short 
+    * Specific 
+    * Describe the change you did in the file
+
+> These commands above are probably the commands you're going to be using the most. Once you making multiple commands and uploading your repositories to the remote (GitHub) the commands bellow will come in handy.
 
 
+`git diff` - 
 ---
 ## Rolling Back Changes
