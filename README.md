@@ -60,6 +60,7 @@ REMEMBER **ALL** these commands are typed in the command line:
 
 `git init` - This command initializes the git in a directory  
 * If git is initialized in a directory its now called a repository.
+> The follwoing two commands are used when you are done making edits in the file and you want to add them to the stage. Adding them to the stage allows you to save them later on.
 
 `git add file.ext` - Adds changes for a *specific file* to the stage ready to commit
 
@@ -68,7 +69,7 @@ REMEMBER **ALL** these commands are typed in the command line:
 `git status` - Ever wonder if you have added a file to the stage ready to commit. Well git status allows you to see what you have added or no. 
 > If you see `Modified: <file_name>` in red, it means you havent added it to the stage. While if you see the same text in green it means its been added to the stage and its ready to be commited.
 
-`git commit -m "short/specific message"` - Once you've added your edits to the stage they are ready to be commited (saved).  
+`git commit -m "short/specific message"` -  Use this command when you are done adding your edits and are ready to be commited (saved).
 * Your message *must be:* 
     * In presesnt tense
     * Short 
@@ -78,6 +79,12 @@ REMEMBER **ALL** these commands are typed in the command line:
 > These commands above are probably the commands you're going to be using the most. Once you making multiple commands and uploading your repositories to the remote (GitHub) the commands bellow will come in handy.
 
 
-`git diff` - 
+`git diff` - If you ever want to see the differnce between  your current edit and the previous commit this will do the job.
+
+`git log` - You may also just want to see your previous commits. Well in that case, this commit will display **ALL** previous commits you've done.
+* Press *Control* and the *letter q* on the keyboard to get out of `git log`
+
+
+
 ---
 ## Rolling Back Changes
