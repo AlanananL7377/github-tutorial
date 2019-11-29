@@ -76,13 +76,29 @@ REMEMBER **ALL** these commands are typed in the command line:
     * Specific 
     * Describe the change you did in the file
 
-> These commands above are probably the commands you're going to be using the most. Once you making multiple commands and uploading your repositories to the remote (GitHub) the commands bellow will come in handy.
+> These commands above are probably the commands you're going to be using the most. On the other hand the following two commands are mostly optional and are used in the event you want to see previous commits.
 
 
 `git diff` - If you ever want to see the differnce between  your current edit and the previous commit this will do the job.
 
 `git log` - You may also just want to see your previous commits. Well in that case, this commit will display **ALL** previous commits you've done.
 * Press *Control* and the *letter q* on the keyboard to get out of `git log`
+
+##### Sending Local Repository to Remote
+
+> You may want to begin backing up your local repositoties to the remote (Github). This is going to require a steps and a few commands in the beginning but then it will be easier. 
+
+1. Create a repository by initializing git in a directory.
+2. Make a file called README.md
+3. Once you've done the steps above go to [github.com](https://github.com/) and sign in.
+4. Click on the _plus icon_ located on the top right side of your screen 
+5. Now click on *create repository*
+6. Enter the name of your repository from your ide 
+    * This has to be identical or else it wont work
+7. Scroll down and make sure you have "Initialize this repository with a README" **OFF**.
+8. Click the green button _"Create Repository"_
+
+
 
 
 
