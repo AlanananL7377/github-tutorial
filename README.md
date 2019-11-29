@@ -118,8 +118,14 @@ git push -u origin master
 
 > What you just did was program your ide where to upload your repository in the cloud. If you didn't select SSH key you would have to be signing in every time you are going to push and pull. If you didn't use SSH and instead used HTTPS you will have to sign in to push or pull. Some of you may be wondering why you dont have to sign in when you use the SSH key. Well earlier when you set up your ide with yout github, you linked them together and so the computer is smart enough to recognize this and wont ask for your information again.
 
+* Lets explain what the commands you put in the command line did.
+    * `git remote add origin URL` - In simple words is setting up the connection between the local repo and remote repo.
+    * `git push -u origin master` - The command creates a permenant bridge between the remote and the local. This allows to push without the extra origin master part that usally follows the command.
+
+`git remote -v` - Ever want to remind yourself where the commits are being send to the cloud. Just type this and it will tell you where you can pull and push. This is similar to `git status` 
 
 
+#### Setting up Clone and Fork
 
 ---
 ## Rolling Back Changes
