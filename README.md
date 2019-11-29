@@ -150,3 +150,6 @@ git push -u origin master
 
 `git reset --hard HEAD file` - Ever want to just go all the way back before commiting, adding and even having any edits done. Well this command will take you all the way back.
 
+> Before learning the next command you need to know each commit has it own unique SHA code. This could be accessed by doing `git log`
+
+`git reset --hard [first nine digit of SHA]`- This command erases the commit you made from your remote. In other words this is _"Unpushing"_ a file.
