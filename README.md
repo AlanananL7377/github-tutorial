@@ -60,6 +60,11 @@ REMEMBER **ALL** these commands are typed in the command line:
 
 `git init` - This command initializes the git in a directory
 * If git is initialized in a directory its now called a repository.
+    * Do it in directory that you want to turn into repository 
+    * DO NOT DO IT IN ROOT DIRECTORY 
+
+        * `rm -rf .git` - If you ever initialize git in the wrong directory or in the root directory just tpye this command and it will un-initialize git.
+
 > The follwoing two commands are used when you are done making edits in the file and you want to add them to the stage. Adding them to the stage allows you to save them later on.
 
 `git add file.ext` - Adds changes for a *specific file* to the stage ready to commit
@@ -133,5 +138,15 @@ git push -u origin master
 
 > Everyone makes mistakes and in coding its defintely bound to happen. The important things to keep in mind is how to undo them. Bellow are lists of commands that will help you undo them in the case of a mistake or  you just changed your mind.
 
-`rm -rf .git` - If you ever initialize git in the wrong directory or in the root directory just tpye this command and it will un-initialize git.
+`git checkout -- file` - After you edited your file you may change your mind and perfer the previous version over your current one. This is where this command come into use since it will "unedit" you current file.
+
+`git reset HEAD file` - When you accidentally or change your mind over a file you added to the stage you can  "unadd" by using this command
+    * In the event you forget this command you see it by typing `git status` after you had added your file(s) to the stage.
+
+`git reset --soft HEAD file` - Sometimes you may want uncommit and this is where this command comes into use. 
+> The commands above only undo commits, what you've added and edited one by one. If you want to save a little more time the following commands will undo multiple at the same time.
+
+`git reset HEAD~1` - This command will undo what you added and the commit and take you directly to the editing phase.
+
+`git reset --hard HEAD file` - Ever want to just go all the way back before commiting, adding and even having any edits done. Well this command will take you all the way back.
 
