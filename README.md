@@ -84,7 +84,7 @@ REMEMBER **ALL** these commands are typed in the command line:
 `git log` - You may also just want to see your previous commits. Well in that case, this commit will display **ALL** previous commits you've done.
 * Press *Control* and the *letter q* on the keyboard to get out of `git log`
 
-##### Sending Local Repository to Remote
+##### Setting up Push and Pull
 
 > You may want to begin backing up your local repositoties to the remote (Github). This is going to require a steps and a few commands in the beginning but then it will be easier. 
 
@@ -97,7 +97,17 @@ REMEMBER **ALL** these commands are typed in the command line:
     * This has to be identical or else it wont work
 7. Scroll down and make sure you have "Initialize this repository with a README" **OFF**.
 8. Click the green button _"Create Repository"_
+    * This will direct you to another page
+9. You will see code similar to this 
+    * If you dont make sure SSH key is turned on
+``` 
+git remote add origin git@github.com:user_name/repository_name.git
+git push -u origin master
+```
+10. Copy the code from **YOUR** page and paste it in the command line
+11. Press enter
 
+> What you just did was program your computer where to upload your repository in the cloud. If you didn't select SSH key you would have to be signing in every time you are going to push and pull. If you didn't use SSH and used HTTPS instead you will have to sign in to push or pull. Some of you may be wondering why you dont have to sign in when you use the SSH key. Well earlier when you set up your ide with yout github, you linked them together and so the computer is smart enough to recognize this and wont ask for your information again.
 
 
 
