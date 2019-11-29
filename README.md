@@ -48,17 +48,17 @@ CONGRATULATIONS YOU NOW HAVE A GITHUB ACCOUNT!!!!
 * Now still in the command line type `git commit -m "short/specific message"`
     * The short/specific message should be in the present tense and also describe what you change you did in the file.
 * Once you have commit (saved the changes) you can now go back and do some more edits in the file.
-* Now repeat: 
+* Now repeat:
     * Edit your file, add it and commit it
 
 
 ---
 ## Workflow & Commands
-> You've just used `git init` , `git add` & `git commit` but you really dont know what they exactly do. Bellow is a list of commands you have already used and commands you haven't used that will come in handy. 
+> You've just used `git init` , `git add` & `git commit` but you really dont know what they exactly do. Bellow is a list of commands you have already used and commands you haven't used that will come in handy.
 
 REMEMBER **ALL** these commands are typed in the command line:
 
-`git init` - This command initializes the git in a directory  
+`git init` - This command initializes the git in a directory
 * If git is initialized in a directory its now called a repository.
 > The follwoing two commands are used when you are done making edits in the file and you want to add them to the stage. Adding them to the stage allows you to save them later on.
 
@@ -66,14 +66,14 @@ REMEMBER **ALL** these commands are typed in the command line:
 
 `git add .` - Adds changes of **ALL** files to the stage
 
-`git status` - Ever wonder if you have added a file to the stage ready to commit. Well git status allows you to see what you have added or no. 
+`git status` - Ever wonder if you have added a file to the stage ready to commit. Well git status allows you to see what you have added or no.
 > If you see `Modified: <file_name>` in red, it means you havent added it to the stage. While if you see the same text in green it means its been added to the stage and its ready to be commited.
 
 `git commit -m "short/specific message"` -  Use this command when you are done adding your edits and are ready to be commited (saved).
-* Your message *must be:* 
+* Your message *must be:*
     * In presesnt tense
-    * Short 
-    * Specific 
+    * Short
+    * Specific
     * Describe the change you did in the file
 
 > These commands above are probably the commands you're going to be using the most. On the other hand the following two commands are mostly optional and are used in the event you want to see previous commits.
@@ -87,7 +87,7 @@ REMEMBER **ALL** these commands are typed in the command line:
 #### Setting up Push and Pull
 
 
-* You may want to begin backing up your local repositoties to the remote (Github). 
+* You may want to begin backing up your local repositoties to the remote (Github).
 
 `git push` - Send commits from local repo (ide) “up” to remote repo (github)
 
@@ -98,16 +98,16 @@ REMEMBER **ALL** these commands are typed in the command line:
 1. Create a repository by initializing git in a directory.
 2. Make a file called README.md
 3. Once you've done the steps above go to [github.com](https://github.com/) and sign in.
-4. Click on the _plus icon_ located on the top right side of your screen 
+4. Click on the _plus icon_ located on the top right side of your screen
 5. Now click on *create repository*
-6. Enter the name of your repository from your ide 
+6. Enter the name of your repository from your ide
     * This has to be identical or else it wont work
 7. Scroll down and make sure you have "Initialize this repository with a README" **OFF**.
 8. Click the green button _"Create Repository"_
     * This will direct you to another page
-9. You will see code similar to this 
+9. You will see code similar to this
     * If you dont make sure SSH key is turned on
-``` 
+```
 git remote add origin git@github.com:user_name/repository_name.git
 git push -u origin master
 ```
@@ -122,10 +122,16 @@ git push -u origin master
     * `git remote add origin URL` - In simple words is setting up the connection between the local repo and remote repo.
     * `git push -u origin master` - The command creates a permenant bridge between the remote and the local. This allows to push without the extra origin master part that usally follows the command.
 
-`git remote -v` - Ever want to remind yourself where the commits are being send to the cloud. Just type this and it will tell you where you can pull and push. This is similar to `git status` 
+`git remote -v` - Ever want to remind yourself where the commits are being send to the cloud. Just type this and it will tell you where you can pull and push. This is similar to `git status`
 
 
 #### Setting up Clone and Fork
 
+
 ---
 ## Rolling Back Changes
+
+> Everyone makes mistakes and in coding its defintely bound to happen. The important things to keep in mind is how to undo them. Bellow are lists of commands that will help you undo them in the case of a mistake or  you just changed your mind.
+
+`rm -rf .git` - If you ever initialize git in the wrong directory or in the root directory just tpye this command and it will un-initialize git.
+
