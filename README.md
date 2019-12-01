@@ -60,8 +60,8 @@ REMEMBER **ALL** these commands are typed in the command line:
 
 `git init` - This command initializes the git in a directory
 * If git is initialized in a directory its now called a repository.
-    * Do it in directory that you want to turn into repository 
-    * DO NOT DO IT IN ROOT DIRECTORY 
+    * Do it in directory that you want to turn into repository
+    * DO NOT DO IT IN ROOT DIRECTORY
 
         * `rm -rf .git` - If you ever initialize git in the wrong directory or in the root directory just tpye this command and it will un-initialize git.
 
@@ -91,14 +91,11 @@ REMEMBER **ALL** these commands are typed in the command line:
 
 #### Setting up Push and Pull
 
-
-* You may want to begin backing up your local repositoties to the remote (Github).
+> Pushing and Pulling are very important once you begin having a local repo and a remote repo. Bellow is a brief explanation of what they both do and how to use them.
 
 `git push` - Send commits from local repo (ide) “up” to remote repo (github). Its like updating your local.
 
-`git pull` - Sends commits from remote repo (github) down to local repo (ide). Its like updating your remote.
-
-> But before using these commands we will have to set the place where the commits will go in the cloud. It will require some steps but after them you will be able to use both commands above.
+> Before using this commands we will have to set where the commits will go. In other words we have to set where we are pushing it. This will require some steps but after them you will be able to use both commands above.
 
 1. Create a repository by initializing git in a directory.
 2. Make a file called README.md
@@ -119,7 +116,7 @@ git push -u origin master
 10. Copy the code from **YOUR** page and paste it in the command line
 11. Press enter
 
-* Now when you edit your README.md add it & commit it, you can now use `git push` or `git pull`
+* Now when you edit your README.md add it & commit it, you can now use just the command `git push`
 
 > What you just did was program your ide where to upload your repository in the cloud. If you didn't select SSH key you would have to be signing in every time you are going to push and pull. If you didn't use SSH and instead used HTTPS you will have to sign in to push or pull. Some of you may be wondering why you dont have to sign in when you use the SSH key. Well earlier when you set up your ide with yout github, you linked them together and so the computer is smart enough to recognize this and wont ask for your information again.
 
@@ -129,26 +126,41 @@ git push -u origin master
 
 `git remote -v` - Ever want to remind yourself where the commits are being send to the cloud. Just type this and it will tell you where you can pull and push. This is similar to `git status`
 
+> On the other hand `git pull` doesn't require exrta steps to be able to use it. You would use this command only if you're working straight off your remote repo (Github) and wanted to update your local.
 
-#### How to Clone in your ide:
+`git pull` - Sends commits from remote repo (github) down to local repo (ide). Its like updating your remote.
 
-> Right above, you just learned how to back up your local repo. In the event of you local repo dissapears due to a virus, accidental deletion or even forgetting your own password, cloning can come in real handy. Follow the steps bellow to learn how to clone.
+#### Cloning Vs Forking
+
+##### Clone:
+
+> Right above, you just learned how to back up your local repo. In the event of you local repo dissapears due to a virus, accidental deletion or want to work off someones project for yourself, cloning can come in real handy. Follow the steps bellow to learn how to clone.
 
 1. Go to [github.com](https://github.com/)
-2. Go to your repository you cant access in your local repo (ide) on Github
-3. Click on "Clone or Download" 
+2. Go to the repository you'd like to aquire 
+3. Click on "Clone or Download"
     * Make sure it says "Clone with SSH"
         * If it says "Clone with HTTPS" click "Use SSH"
 4. Copy the URL
 5. Go to your ide and make sure you are in the directory where you want this repo to go
-6. Type `git clone` and paste the URL after it 
+6. Type `git clone` and paste the URL after it
 7. Press enter
     * If you are going to work in the repository make sure to `cd` into it.
 
-`git clone` - Allows you to copy a remote repo into your local repo
+`git clone` - Allows you to copy a remote repo into your ide.
 
+> Unfortunatly with `git clone` you can not push your local commits to the remote repo. This is becuase when you clone you have a local copy of **THEIR** remote repo. To add on, You do not have permission to push to their remote. This is where forking comes in. 
 
+##### Forking
 
+> Forking on the other hand, give you a **remote copy** of *THEIR* **remote repo**. You can then clone your remote to your local machine. You do have permission to push to your remote. Keep in mind in order to fork you need to know how to clone. Down bellow is a guide on how to Fork.
+
+1. Go to [github.com](https://github.com/)
+2. Go to a repository you'd like to fork
+3. Click on the fork button located at the right top of the screen.
+4. 
+
+> Both cloning and forking are very useful but when you clone off someone elses remote repo  On the other hand 
 
 
 ---
@@ -161,7 +173,7 @@ git push -u origin master
 `git reset HEAD file` - When you accidentally or change your mind over a file you added to the stage you can  "unadd" by using this command
     * In the event you forget this command you see it by typing `git status` after you had added your file(s) to the stage.
 
-`git reset --soft HEAD file` - Sometimes you may want uncommit and this is where this command comes into use. 
+`git reset --soft HEAD file` - Sometimes you may want uncommit and this is where this command comes into use.
 > The commands above only undo commits, what you've added and edited one by one. If you want to save a little more time the following commands will undo multiple at the same time.
 
 `git reset HEAD~1` - This command will undo what you added and the commit and take you directly to the editing phase.
