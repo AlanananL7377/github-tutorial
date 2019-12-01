@@ -94,9 +94,9 @@ REMEMBER **ALL** these commands are typed in the command line:
 
 * You may want to begin backing up your local repositoties to the remote (Github).
 
-`git push` - Send commits from local repo (ide) “up” to remote repo (github)
+`git push` - Send commits from local repo (ide) “up” to remote repo (github). Its like updating your local.
 
-`git pull` - Sends commits from remote repo (github) down to local repo (ide)
+`git pull` - Sends commits from remote repo (github) down to local repo (ide). Its like updating your remote.
 
 > But before using these commands we will have to set the place where the commits will go in the cloud. It will require some steps but after them you will be able to use both commands above.
 
@@ -130,7 +130,25 @@ git push -u origin master
 `git remote -v` - Ever want to remind yourself where the commits are being send to the cloud. Just type this and it will tell you where you can pull and push. This is similar to `git status`
 
 
-#### Setting up Clone and Fork
+#### How to Clone in your ide:
+
+> Right above, you just learned how to back up your local repo. In the event of you local repo dissapears due to a virus, accidental deletion or even forgetting your own password, cloning can come in real handy. Follow the steps bellow to learn how to clone.
+
+1. Go to [github.com](https://github.com/)
+2. Go to your repository you cant access in your local repo (ide) on Github
+3. Click on "Clone or Download" 
+    * Make sure it says "Clone with SSH"
+        * If it says "Clone with HTTPS" click "Use SSH"
+4. Copy the URL
+5. Go to your ide and make sure you are in the directory where you want this repo to go
+6. Type `git clone` and paste the URL after it 
+7. Press enter
+    * If you are going to work in the repository make sure to `cd` into it.
+
+`git clone` - Allows you to copy a remote repo into your local repo
+
+
+
 
 
 ---
