@@ -174,7 +174,7 @@ git push -u origin master
 ---
 ## Rolling Back Changes
 
-> Everyone makes mistakes and in coding its defintely bound to happen. The important things to keep in mind is how to undo them. Bellow are lists of commands that will help you undo them in the case of a mistake or  you just changed your mind.
+> Everyone makes mistakes and in coding its defintely bound to happen. The important things to keep in mind is how to undo them. Below are lists of commands that will help you undo them in the case of a mistake or  you just changed your mind.
 
 `git checkout -- file` - After you edited your file you may change your mind and perfer the previous version over your current one. This is where this command come into use since it will "unedit" you current file.
 
