@@ -137,7 +137,7 @@ git push -u origin master
 > Right above, you just learned how to back up your local repo. In the event of you local repo dissapears due to a virus, accidental deletion or want to work off someones project for yourself, cloning can come in real handy. Follow the steps bellow to learn how to clone.
 
 1. Go to [github.com](https://github.com/)
-2. Go to the repository you'd like to aquire 
+2. Go to the repository you'd like to aquire
 3. Click on "Clone or Download"
     * Make sure it says "Clone with SSH"
         * If it says "Clone with HTTPS" click "Use SSH"
@@ -149,7 +149,7 @@ git push -u origin master
 
 `git clone` - Allows you to copy a remote repo into your ide.
 
-> Unfortunatly with `git clone` you can not push your local commits to the remote repo. This is becuase when you clone you have a local copy of **THEIR** remote repo. To add on, You do not have permission to push to their remote. This is where forking comes in. 
+> Unfortunatly with `git clone` you can not push your local commits to the remote repo. This is becuase when you clone you have a local copy of **THEIR** remote repo. To add on, You do not have permission to push to their remote. This is where forking comes in.
 
 ##### Forking
 
@@ -158,9 +158,17 @@ git push -u origin master
 1. Go to [github.com](https://github.com/)
 2. Go to a repository you'd like to fork
 3. Click on the fork button located at the right top of the screen.
-4. 
+4. Once it finishes loading click on "Clone or Download"
+    * Make sure it says "Clone with SSH"
+        * If it says "Clone with HTTPS" click "Use SSH"
+4. Copy the URL
+5. Go to your ide and make sure you are in the directory where you want this repo to go
+6. Type `git clone` and paste the URL after it
+7. Press enter
 
-> Both cloning and forking are very useful but when you clone off someone elses remote repo  On the other hand 
+> Now you can work on the local repository and then push it the remote repository. Forking is amazing when you are trying to collaborate with others or even trying to suggest changes in the remote repo. If you want to learn how to suggest changes and if youre the owner how to accept changes (pull request).
+
+
 
 
 ---
