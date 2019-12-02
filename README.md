@@ -38,17 +38,17 @@ CONGRATULATIONS YOU NOW HAVE A GITHUB ACCOUNT!!!!
 ## Repository Setup
 > Now that you have set up your ide and your Github account you can now create repositories.
 
-* Go to the directory you desire to turn into a repository
-* Type `git init` in the command line
-* Now you need to create a file that you can edit and make changes to
+1. Go to the directory you desire to turn into a repository
+2. Type `git init` in the command line
+3. Now you need to create a file that you can edit and make changes to
     * In the command line type `touch <filename>`
-* Once you've made the file type `c9 <filename>` to open the new file
-* In this file you can type anything you want
-* Once you're done making edits in the file go back to the command line and type `git add .`
-* Now still in the command line type `git commit -m "short/specific message"`
+4. Once you've made the file type `c9 <filename>` to open the new file
+5. In this file you can type anything you want
+6. Once you're done making edits in the file go back to the command line and type `git add .`
+7. Now still in the command line type `git commit -m "short/specific message"`
     * The short/specific message should be in the present tense and also describe what you change you did in the file.
-* Once you have commit (saved the changes) you can now go back and do some more edits in the file.
-* Now repeat:
+8. Once you have commit (saved the changes) you can now go back and do some more edits in the file.
+9. Now repeat:
     * Edit your file, add it and commit it
 
 
@@ -191,3 +191,8 @@ git push -u origin master
 > Before learning the next command you need to know each commit has it own unique SHA code. This could be accessed by doing `git log`
 
 `git reset --hard [first nine digit of SHA]`- This command erases the commit you made from your remote. In other words this is _"Unpushing"_ a file.
+
+
+
+
+
