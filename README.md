@@ -151,7 +151,9 @@ git push -u origin master
 
 > Unfortunatly with `git clone` you can not push your local commits to the remote repo. This is becuase when you clone you have a local copy of **THEIR** remote repo. To add on, You do not have permission to push to their remote. This is where forking comes in.
 
-##### Forking
+##### Collaboration 
+
+**Forking**
 
 > Forking on the other hand, give you a **remote copy** of *THEIR* **remote repo**. You can then clone your remote to your local machine. You do have permission to push to your remote. Keep in mind in order to fork you need to know how to clone. Down bellow is a guide on how to Fork.
 
@@ -166,21 +168,48 @@ git push -u origin master
 6. Type `git clone` and paste the URL after it
 7. Press enter
 
-> Now you can work on the local repository and then push it the remote repository. Forking is amazing when you are trying to collaborate with others or even trying to suggest changes in the remote repo. If you want to learn how to suggest changes to the owner of the original remote repo follow the steps bellow
+> Now you can work on the local repository and then push it the remote repository. Forking is amazing when you are trying to collaborate with others or even trying to suggest changes in the remote repo. If you want to learn how to suggest changes to the owner of the original remote repo follow the steps bellow. 
 
+**Send and Accept Pull Request**
 
 1. Follow the steps on how to fork 
-2. Make a change in the file of the local repo that was just formed by forking and cloning 
-3. `git add` 
-4. `git commit -m "specific/short change`
-5. `git push`
+2. Make a change in the file of the local repo that was just formed by forking and cloning. 
+3. After the change/edit 
+    * `git add` 
+    * `git commit -m "specific/short change`
+    * `git push`
+        * ***VERY IMPORTANT TO DO THESE STEPS***
 
 > Some of may be like, but wait dont we have to go through the procedure of setting push up? Well no because when you forked and clone you at the same time set the location where you're going to push.
 
 6. Go to the owners version of the repository 
 7. Click on _"New pull request"_
     * Github is smart enough to compare thier remote repo with your remote repo
-8. Click on _"Create pull request"
+8. Now click on _"Create pull request"_
+9. Write a comment saying why they should make the revisions and use yours instead.
+10. Click on _"create pull request"_
+
+> Keep in mind what you're suggesting to change is based on the commits and what you pushed to your remote repo. Once you send a pull request they will get notified through their email and you just have to wait to see if they accept the changes. In the end its the owners decesion to change it or not.
+
+If you're the owner and want to figure out how to accept/merge the pull request, follow the steps bellow to figure it out.
+
+1. Go to your remote repository that recieved a pull request
+    * You can quickly access this by going to the email you got with the pull requestion and click the first link given 
+2. Click on pull request    
+    * Located in between _"Issues"_ and _"Actions"_
+3. Open the pull request that was sent by someone 
+4. If you desire to accept the changes after viewing them CAREFULLY click "Merge pull request"
+5. Click _"Confirm Merge"_
+6. Check the remote repo and make sure it went through
+
+ > You may think you're all done because its there in your remote repo but if you look carefully in the local remote its not there. Some of you are going, well how do I get it there then? Well this is where `git pull` comes handy.
+ 
+7. Go to your local repo 
+8. In your command line type `git pull`
+    * This updates your local repo by fetching the information located in the remote repo
+
+> CONGRATULATIONS!!!! You're all done, you now know how to send pull requests and even accept them if you ever get one. 
+
 
 ---
 ## Rolling Back Changes
