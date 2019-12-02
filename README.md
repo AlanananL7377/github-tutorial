@@ -178,8 +178,8 @@ git push -u origin master
 
 `git checkout -- file` - After you edited your file you may change your mind and perfer the previous version over your current one. This is where this command come into use since it will "unedit" you current file.
 
-`git reset HEAD file` - When you accidentally or change your mind over a file you added to the stage you can  "unadd" by using this command
-    * In the event you forget this command you see it by typing `git status` after you had added your file(s) to the stage.
+`git reset HEAD file` - When you accidentally or change your mind over a file you added to the stage you can  "unadd" by using this command.
+* In the event you forget this command you see it by typing `git status` after you had added your file(s) to the stage.
 
 `git reset --soft HEAD file` - Sometimes you may want uncommit and this is where this command comes into use.
 > The commands above only undo commits, what you've added and edited one by one. If you want to save a little more time the following commands will undo multiple at the same time.
