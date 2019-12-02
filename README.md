@@ -166,10 +166,21 @@ git push -u origin master
 6. Type `git clone` and paste the URL after it
 7. Press enter
 
-> Now you can work on the local repository and then push it the remote repository. Forking is amazing when you are trying to collaborate with others or even trying to suggest changes in the remote repo. If you want to learn how to suggest changes and if youre the owner how to accept changes (pull request).
+> Now you can work on the local repository and then push it the remote repository. Forking is amazing when you are trying to collaborate with others or even trying to suggest changes in the remote repo. If you want to learn how to suggest changes to the owner of the original remote repo follow the steps bellow
 
 
+1. Follow the steps on how to fork 
+2. Make a change in the file of the local repo that was just formed by forking and cloning 
+3. `git add` 
+4. `git commit -m "specific/short change`
+5. `git push`
 
+> Some of may be like, but wait dont we have to go through the procedure of setting push up? Well no because when you forked and clone you at the same time set the location where you're going to push.
+
+6. Go to the owners version of the repository 
+7. Click on _"New pull request"_
+    * Github is smart enough to compare thier remote repo with your remote repo
+8. Click on _"Create pull request"
 
 ---
 ## Rolling Back Changes
