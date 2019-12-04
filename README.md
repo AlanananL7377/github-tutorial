@@ -43,18 +43,18 @@ CONGRATULATIONS YOU NOW HAVE A GITHUB ACCOUNT!!!!
 3. Now you need to create a file that you can edit and make changes to
     * In the command line type `touch <filename>`
 4. Once you've made the file type `c9 <filename>` to open the new file
-5. In this file you can type anything you want
-6. Once you're done making edits in the file go back to the command line and type `git add .`
-7. Now still in the command line type `git commit -m "short/specific message"`
+    * In this file you can type anything you want
+5. Once you're done making edits in the file go back to the command line and type `git add .`
+6. Now still in the command line type `git commit -m "short/specific message"`
     * The short/specific message should be in the present tense and also describe what you change you did in the file.
-8. Once you have committed (saved the changes) you can now go back and do some more edits in the file.
-9. Now repeat:
+7. Once you have committed (saved the changes) you can now go back and do some more edits in the file.
+8. Now repeat:
     * Edit your file, add it and commit it
 
 
 ---
 ## Workflow & Commands
-> You've just used `git init` , `git add` & `git commit` but you really don't know what they exactly do. Bellow is a list of commands you have already used and commands you haven't used that will come in handy.
+> You've just used `git init` , `git add` & `git commit` but you really don't know what they exactly do. Below is a list of commands you have already used and commands you haven't used that will come in handy.
 
 REMEMBER **ALL** these commands are typed in the command line:
 
@@ -91,7 +91,7 @@ REMEMBER **ALL** these commands are typed in the command line:
 
 #### Setting up Push and Pull
 
-> Pushing and Pulling are very important once you begin having a local repo and a remote repo. Bellow is a brief explanation of what they both do and how to use them.
+> Pushing and Pulling are very important once you begin having a local repo and a remote repo. Below is a brief explanation of what they both do and how to use them.
 
 `git push` - Send commits from local repo (ide) “up” to remote repo (github). Its like updating your local.
 
@@ -151,11 +151,9 @@ git push -u origin master
 
 > Unfortunately with `git clone` you can not push your local commits to the remote repo. This is because when you clone you have a local copy of **THEIR** remote repo. To add on, You do not have permission to push to their remote. This is where forking comes in.
 
-##### Collaboration 
+##### Forking:
 
-**Forking**
-
-> Forking on the other hand, give you a **remote copy** of *THEIR* **remote repo**. You can then clone your remote to your local machine. You do have permission to push to your remote. Keep in mind in order to fork you need to know how to clone. Down bellow is a guide on how to Fork.
+> Forking on the other hand, give you a **remote copy** of *THEIR* **remote repo**. You can then clone your remote to your local machine. You do have permission to push to your remote. Keep in mind in order to fork you need to know how to clone. Down below is a guide on how to Fork.
 
 1. Go to [github.com](https://github.com/)
 2. Go to a repository you'd like to fork
@@ -163,53 +161,53 @@ git push -u origin master
 4. Once it finishes loading click on "Clone or Download"
     * Make sure it says "Clone with SSH"
         * If it says "Clone with HTTPS" click "Use SSH"
-4. Copy the URL
-5. Go to your ide and make sure you are in the directory where you want this repo to go
-6. Type `git clone` and paste the URL after it
-7. Press enter
+5. Copy the URL
+6. Go to your ide and make sure you are in the directory where you want this repo to go
+7. Type `git clone` and paste the URL after it
+8. Press enter
 
-> Now you can work on the local repository and then push it the remote repository. Forking is amazing when you are trying to collaborate with others or even trying to suggest changes in the remote repo. If you want to learn how to suggest changes to the owner of the original remote repo follow the steps below. 
+> Now you can work on the local repository and then push it the remote repository. Forking is amazing when you are trying to collaborate with others or even trying to suggest changes in the remote repo. If you want to learn how to suggest changes to the owner of the original remote repo follow the steps below.
 
 **Send and Accept Pull Request**
 
 
-1. Follow the steps on how to fork 
-2. Make a change in the file of the local repo that was just formed by forking and cloning. 
-3. After the change/edit 
-    * `git add` 
+1. Follow the steps on how to fork
+2. Make a change in the file of the local repo that was just formed by forking and cloning.
+3. After the change/edit
+    * `git add`
     * `git commit -m "specific/short change`
     * `git push`
         * ***VERY IMPORTANT TO DO THESE STEPS***
 
 > Some of you may be like, but wait don't we have to go through the procedure of setting push up? Well no because when you forked and clone you at the same time set the location where you're going to push.
 
-6. Go to the owners version of the repository 
-7. Click on _"New pull request"_
+4. Go to the owners version of the repository
+5. Click on _"New pull request"_
     * Github is smart enough to compare their remote repo with your remote repo
-8. Now click on _"Create pull request"_
-9. Write a comment saying why they should make the revisions and use yours instead.
-10. Click on _"create pull request"_
+6. Now click on _"Create pull request"_
+7. Write a comment saying why they should make the revisions and use yours instead.
+9. Click on _"create pull request"_
 
 > Keep in mind what you're suggesting to change is based on the commits and what you pushed to your remote repo. Once you send a pull request they will get notified through their email and you just have to wait to see if they accept the changes. In the end it's the owners decision to change it or not.
 
-If you're the owner and want to figure out how to accept/merge the pull request, follow the steps below to figure it out.
+If you're the **owner** and want to figure out how to accept/merge the pull request, follow the steps below to figure it out.
 
 1. Go to your remote repository that received a pull request
-    * You can quickly access this by going to the email you got with the pull request and click the first link given 
-2. Click on pull request    
+    * You can quickly access this by going to the email you got with the pull request and click the first link given
+2. Click on pull request
     * Located in between _"Issues"_ and _"Actions"_
-3. Open the pull request that was sent by someone 
-4. If you desire to accept the changes after viewing them CAREFULLY click "Merge pull request"
+3. Open the pull request that was sent by someone
+4. If you desire to accept the changes after viewing them **CAREFULLY** click "Merge pull request"
 5. Click _"Confirm Merge"_
 6. Check the remote repo and make sure it went through
 
  > You may think you're all done because it's there in your remote repo but if you look carefully in the local remote it's not there. Some of you are going, well how do I get it there then? Well this is where `git pull` comes handy.
- 
-7. Go to your local repo 
+
+7. Go to your local repo
 8. In your command line type `git pull`
     * This updates your local repo by fetching the information located in the remote repo
 
-> CONGRATULATIONS!!!! You're all done, you now know how to send pull requests and even accept them if you ever get one. 
+> CONGRATULATIONS!!!! You're all done, you now know how to send pull requests and even accept them if you ever get one.
 
 ---
 ## Rolling Back Changes
@@ -219,7 +217,7 @@ If you're the owner and want to figure out how to accept/merge the pull request,
 `git checkout -- file` - After you edited your file you may change your mind and prefer the previous version over your current one. This is where this command come into use since it will "unedit" you current file.
 
 `git reset HEAD file` - When you accidentally or change your mind over a file you added to the stage you can  "unadd" by using this command.
-* In the event you forget this command, you see it by typing `git status` 
+* In the event you forget this command, you see it by typing `git status` after you have added your file(s) to the stage.
 
 `git reset --soft HEAD file` - Sometimes you may want uncommit and this is where this command comes into use.
 > The commands above only undo commits, what you've added and edited one by one. If you want to save a little more time the following commands will undo multiple at the same time.
@@ -230,7 +228,7 @@ If you're the owner and want to figure out how to accept/merge the pull request,
 
 > Before learning the next command you need to know each commit has it own unique SHA code. This could be accessed by doing `git log`
 
-`git reset --hard [first nine digit of SHA]`- This command erases the commit you made from your remote. In other words this is _"Unpushing"_ a file.
+`git reset --hard [first nine digits of SHA]`- This command erases the commit you made from your remote. In other words this is _"Unpushing"_ a file.
 
 
 
